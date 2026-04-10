@@ -1,5 +1,6 @@
 // for loop
 // for (let i = 0; i <10; i++) {
+    // body of the loop
 //     console.log(`Shiva ${i}`);
 // }
 
@@ -36,3 +37,11 @@ let arr = [10, 6, 2, 5, 0, 8, 3];
 //     if (arr[i] % 2 !== 0) console.log(arr[i]);
 // }
 
+// while loop
+let i = 0
+
+while(i < 5) {
+    // body of loop
+    console.log(i);
+    i++
+}
