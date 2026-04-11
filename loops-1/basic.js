@@ -38,10 +38,22 @@ let arr = [10, 6, 2, 5, 0, 8, 3];
 // }
 
 // while loop
-let i = 0
+// let i = 0
+//
+// while(i < 5) {
+//     // body of loop
+//     console.log(i);
+//     i++
+// }
 
-while(i < 5) {
-    // body of loop
-    console.log(i);
-    i++
+// for (let i = 0; i < 3; i++) {
+//     for (let j= 0; j < i; j++){
+//         console.log('i =', i, 'j =', j);
+//     }
+// }
+
+for (let i = 0; i < 3; i++) {
+    for (let j = i; j > 0; j--) {
+        console.log(i, j);
+    }
 }
