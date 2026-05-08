@@ -6,4 +6,22 @@ function lengthOfLastWord(s) {
     return s[s.length - 1].length;
 }
 
-console.log(lengthOfLastWord('Hello World'));
+// solution 2
+function lengthOfLastWord1(s) {
+    let n = s.length - 1;
+
+    while (n >= 0) {
+        if (s[n] !== ' ') break;
+        --n;
+    }
+
+    let count = 0;
+    while (n >= 0) {
+        if (s[n] === ' ') break;
+        --n;
+        count++;
+    }
+    return count;
+}
+
+console.log(lengthOfLastWord1('   Hello World    '));
