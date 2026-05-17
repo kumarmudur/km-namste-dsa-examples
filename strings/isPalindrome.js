@@ -33,4 +33,24 @@ function isPalindrome2(s) {
     return filteredStr === rev;
 }
 
-console.log(isPalindrome2('A man, a plan, a canal: Panama'));
+// solution 3
+// time: O(n) | space: O(1)
+// two pointer example
+function isPalindrome3(s) {
+    s = s.toLowerCase();
+    let i = 0;
+    let j = s.length - 1;
+
+    while (i < j) {
+        if (!s[i].match(/[a-z0-9]/i)) ++i;
+        else if (!s[j].match(/[a-z0-9]/i)) --j;
+        else if (s[i] === s[j]) {
+            ++i;
+            --j;
+        } else return false;
+    }
+
+    return true;
+}
+
+console.log(isPalindrome3('A man, a plan, a canal: Panama'));
